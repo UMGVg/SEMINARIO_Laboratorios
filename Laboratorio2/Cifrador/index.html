@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador de Archivos</title>
+    <link rel="stylesheet" href="EstilosPag.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="Titulo">Cifrador UMG</h1>
+        <h2 class="Subtitulo">Programa para cifrar y descifrar archivos</h2>
+        <div class="logo">
+            <img src="logo.png" alt="Logotipo de la Universidad">
+        </div>
+        <div class="foto">
+            <img src="foto.jpg" alt="foto usuario">
+        </div>
+        
+        <input type="file" id="fileInput">
+        <br><br>
+        
+        <label for="keyInput">Clave de cifrado:</label>
+        <input type="text" id="keyInput" placeholder="Ingresa la clave">
+        <br><br>
+        
+        <button onclick="Encriptar()">Cifrar Archivo</button>
+        <button onclick="Desencriptar()">Descifrar Archivo</button>
+        
+        <br><br>
+        
+        <a id="downloadLink" style="display:none;">Descargar Archivo</a>
+
+        <h3 class="Subtitulo">7690-13-11075 Victor Emanuel Gonzalez Ortiz</h3>
+    </div>
+    <script src="FuncionCifrado.js"></script>
+</body>
+</html>
+
